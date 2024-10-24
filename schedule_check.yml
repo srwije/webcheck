@@ -28,4 +28,4 @@ jobs:
 
     # Run the Python script
     - name: Run the website check script
-      run: python scripts/hcm.py
+      run: python hcm.py
