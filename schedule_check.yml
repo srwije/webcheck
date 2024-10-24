@@ -2,8 +2,8 @@ name: Daily Website Check
 
 on:
   schedule:
-    # Runs at 08:00 UTC every day
-    - cron: "0 8 * * *"
+    # Runs at 02:30 UTC (8:00 AM GMT+5:30) every day
+    - cron: "30 2 * * *"
 
 jobs:
   check_and_email:
