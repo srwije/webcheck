@@ -1,9 +1,10 @@
-name: Minute-by-Minute Website Check
+name: Manual and Scheduled Website Check
 
 on:
   schedule:
     # Runs every minute
     - cron: "* * * * *"
+  workflow_dispatch:  # This allows manual triggering
 
 jobs:
   check_and_email:
