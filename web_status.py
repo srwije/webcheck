@@ -3,7 +3,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# Email credentialss
+# Email credentials
 class EmailCredentials:
     def __init__(self, smtp_server, smtp_port, sender_email, sender_password):
         self.smtp_server = smtp_server
@@ -76,7 +76,6 @@ def main():
         'https://backend.hcmsmiles.lk/login',
         'https://hcmsmiles.lk/login',
         'https://backend.mysoftlogic.lk/backend/login',
-        'https://baaackend.hcmsmiles.lk/login',
         'https://mysoftlogic.lk/',
         'https://glomark.lk/',
         'https://odel.lk/home',
