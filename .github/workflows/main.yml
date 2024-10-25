@@ -1,0 +1,27 @@
+name: Deploy Python Files
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '/*.py'  # Trigger only when Python files are updated
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Git Pull on Remote Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: 128.199.113.252
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          script: |
+            cd /home/user/scripts  # Specify your project directory on the server
+            git pull origin main
