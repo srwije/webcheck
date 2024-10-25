@@ -3,6 +3,7 @@ name: Daily Website Check
 on:
   schedule:
     - cron: "*/30 * * * *"  # Every 30 minutes
+  workflow_dispatch:  # Manual triggering
 
 jobs:
   check_and_email:
