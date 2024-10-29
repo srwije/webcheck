@@ -61,8 +61,8 @@ def main():
     email_credentials = EmailCredentials(
         smtp_server='smtp.gmail.com',  # Example: Gmail SMTP server
         smtp_port=587,
-        sender_email='wije2582@gmail.com',
-        sender_password='uadd ghll rcjd nyco'  # App password
+       # sender_email='wije2582@gmail.com',
+       # sender_password=''  # App password
     )
     
     # Receiver emails
